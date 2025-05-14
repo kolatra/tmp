@@ -90,6 +90,7 @@
      fastfetch
      rofi-wayland
      waybar
+     discord
   ];
   programs.firefox.enable = true;
   programs.thunar.enable = true;
