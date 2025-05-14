@@ -19,8 +19,10 @@
 
   networking.hostName = "laptop"; # Define your hostname.
 
+  # enable internet
   networking.networkmanager.enable = true;
 
+  # audio
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
@@ -35,6 +37,7 @@
   };
   services.blueman.enable = true;
 
+  # desktop
   programs.hyprland = {
     enable = true;
     xwayland.enable = true;
@@ -91,6 +94,7 @@
      rofi-wayland
      waybar
      discord
+     brightnessctl
   ];
   programs.firefox.enable = true;
   programs.thunar.enable = true;
