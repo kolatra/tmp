@@ -96,9 +96,11 @@
      waybar
      discord
      brightnessctl
+     obsidian
+     nemo-with-extensions
   ];
   programs.firefox.enable = true;
-  programs.thunar.enable = true;
+  # programs.thunar.enable = true;
 
   programs.mtr.enable = true;
   programs.gnupg.agent = {
