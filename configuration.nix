@@ -48,7 +48,7 @@
   services.displayManager.autoLogin.user = "tyler";
 
   # Set your time zone.
-  time.timeZone = "America/Arizona";
+  time.timeZone = "America/Edmonton";
 
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
@@ -88,6 +88,8 @@
   environment.systemPackages = with pkgs; [
      neovim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
      wget
+     unzip
+     p7zip
      git
      btop
      kitty
@@ -98,6 +100,7 @@
      brightnessctl
      obsidian
      nemo-with-extensions
+     nemo
   ];
   programs.firefox.enable = true;
   # programs.thunar.enable = true;
